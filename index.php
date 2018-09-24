@@ -1,12 +1,12 @@
 <?php
 //connenction bdd//
-require('config.php');
+require('controller/config.php');
 
 //Select all from table product//
 $req = $bdd->query('SELECT id, name, price, picture FROM products ORDER BY id DESC LIMIT 4');
 $rep = $req->fetchAll();
 //include header page//
-    include 'header.php';
+    include 'controller/header.php';
 ?>
 
     <section>

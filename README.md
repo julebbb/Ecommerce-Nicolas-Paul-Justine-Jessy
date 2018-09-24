@@ -3,7 +3,7 @@
   <content><![CDATA[
 
 
-"Yes We Web" project developed in group, it's a shopwindow developped in PHP with associative array.
+"Yes We Web" project developed in group, it's a shopwindow developped in PHP with data base.
 
 ## Contributing
 
@@ -19,7 +19,7 @@
 
 ## Credits
 
-Paul Decoux, Nicolas Hallaert.
+Paul Decoux, Nicolas Hallaert, Justine Lebbrecht, Jessy.
 
 ## License
 

@@ -1,24 +1,4 @@
 <?php
-require('config.php');
-if ($_SESSION['isConnect'] = true)
-{
-	$_SESSION['isConnect'] = false;
-}
-
-$req = $bdd->query('SELECT * FROM users');
-$rep = $req->fetchAll();
-
-include 'header.php';
-
-if(isset($_SESSION['isConnect']) OR $_SESSION['isConnect'] = false): ?>
-<form class="text-center margin" method="post" action="Adding.php">
-	<input type="text" name="identifiant"/>
-	<input type="password" name="password"/>
-	<button type="submit">se connecter</button>
-</form>
-
-<?php
-endif;
 if (isset($_POST['identifiant']) AND isset($_POST['password'])) {
 		if ($_POST['identifiant'] == $rep[0]['name'] AND $_POST['password'] == $rep[0]['password'])
 		{
@@ -65,6 +45,4 @@ if (isset($_POST['identifiant']) AND isset($_POST['password'])) {
 } else{
 	echo "<p class='text-center'>vous devez vous connecter afin de pouvoir ajouter des articles.</p>";
 }
-
-	include 'footer.html';
-	?>
+ ?>
