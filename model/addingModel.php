@@ -1,6 +1,10 @@
 <?php
 
-function addProd($rep) {
+function formProduct() {
+	require('../controller/config.php');
+
+	$req = $bdd->query('SELECT * FROM users');
+	$rep = $req->fetchAll();
 
 	if (isset($_POST['identifiant']) AND isset($_POST['password'])) {
 

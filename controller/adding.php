@@ -1,12 +1,11 @@
 <?php
 require('config.php');
 
-require('../view/adding_view.php');
-
 require('../model/addingModel.php');
 
-echo addProd($rep);
+require('../view/adding_view.php');
 
+echo formProduct();
 
 include 'footer.html';
 
