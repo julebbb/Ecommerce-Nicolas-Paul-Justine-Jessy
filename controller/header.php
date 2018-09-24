@@ -46,7 +46,7 @@ if(isset($_POST['go']) AND $_POST['go']=='send'){
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
           <div class="navbar-nav logo-medium">
-            <input class="nav-item nav-link active desktop connexion" type="button" value="connexion" onclick="self.location.href='Adding.php'">
+            <input class="nav-item nav-link active desktop connexion" type="button" value="connexion" onclick="self.location.href='adding.php'">
 
             <div class="col-9 desktop mx-5">
               <?php echo $title['nameHTML']; ?>
