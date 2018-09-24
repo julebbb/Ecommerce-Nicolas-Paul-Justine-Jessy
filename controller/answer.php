@@ -1,5 +1,5 @@
 <?php
 
-require('model/answer.php');
+require('../model/answerModel.php');
 
  ?>

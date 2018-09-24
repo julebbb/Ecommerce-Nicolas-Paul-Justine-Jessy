@@ -5,7 +5,7 @@ $title =  array
             <p class="slogan text-center">Prends ton pied</p></a>',
   'name' => 'E-shoes'
 );
-$_SESSION['panier'] = 0;
+
 if(isset($_POST['go']) AND $_POST['go']=='send'){
   $_SESSION['panier']++;
 }
