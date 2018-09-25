@@ -3,7 +3,6 @@ require('config.php');
 require('../model/addingModel.php');
 require('../view/adding_view.php');
 
-
 if ($_SESSION['isConnect'] = true)
 {
 	$_SESSION['isConnect'] = false;
@@ -12,7 +11,10 @@ if ($_SESSION['isConnect'] = true)
 include '../controller/header.php';
 
 if(isset($_SESSION['isConnect']) OR $_SESSION['isConnect'] = false):
+
+  //check all users in database
   echo connectUser();
+
 endif;
 
 $rep = check_user();
@@ -23,11 +25,10 @@ if (isset($_POST['identifiant']) AND isset($_POST['password'])) {
 
       $_SESSION['isConnect'] = true;
 
+      //display add product
       echo formProduct();
 
-    }
-
-      else {
+    } else {
 
        echo "<p class='text-center'>Mot de passe éronné.</p>";
 
@@ -38,6 +39,5 @@ if (isset($_POST['identifiant']) AND isset($_POST['password'])) {
   }
 
 include 'footer.html';
-
 
  ?>
