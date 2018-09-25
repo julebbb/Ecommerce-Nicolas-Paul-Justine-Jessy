@@ -6,6 +6,10 @@ $title =  array
   'name' => 'E-shoes'
 );
 
+if (!isset($_SESSION['panier'])) {
+  $_SESSION['panier'] = 0;
+}
+
 if(isset($_POST['go']) AND $_POST['go']=='send'){
   $_SESSION['panier']++;
 }
